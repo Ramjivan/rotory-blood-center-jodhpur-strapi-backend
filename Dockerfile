@@ -22,5 +22,5 @@ WORKDIR /opt/app
 COPY --from=build /opt/app ./
 ENV PATH=/opt/node_modules/.bin:$PATH
 
-EXPOSE 1337
+EXPOSE 3000
 CMD ["npm", "run", "start"]

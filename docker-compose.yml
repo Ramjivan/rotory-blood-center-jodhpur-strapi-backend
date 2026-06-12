@@ -8,7 +8,7 @@ services:
     image: rbc-strapi:latest
     restart: unless-stopped
     expose:
-      - '1337'
+      - '3000'
     labels:
       - "traefik.docker.network=dokploy-network"
     volumes:
@@ -16,7 +16,7 @@ services:
       - ./public/uploads:/opt/app/public/uploads
     environment:
       - HOST=0.0.0.0
-      - PORT=1337
+      - PORT=3000
       - APP_KEYS=${APP_KEYS}
       - API_TOKEN_SALT=${API_TOKEN_SALT}
       - ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET}
@@ -27,7 +27,7 @@ services:
       - DATABASE_FILENAME=database/data.db
       - NODE_ENV=production
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:1337/admin"]
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000/admin"]
       start_period: 15s
       interval: 30s
       timeout: 10s
