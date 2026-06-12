@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "camps",
+  "info": {
+    "singularName": "camp",
+    "pluralName": "camps",
+    "displayName": "Camp",
+    "description": "Donation drives and camps"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "text"
+    },
+    "organizer": {
+      "type": "string"
+    }
+  }
+}

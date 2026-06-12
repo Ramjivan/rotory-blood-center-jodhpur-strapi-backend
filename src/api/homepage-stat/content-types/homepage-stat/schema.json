@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_stats",
+  "info": {
+    "singularName": "homepage-stat",
+    "pluralName": "homepage-stats",
+    "displayName": "Homepage Stat",
+    "description": "Stats shown on the homepage like lives saved, active donors, etc."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "livesSaved": {
+      "type": "string",
+      "required": true,
+      "default": "15,000+"
+    },
+    "activeDonors": {
+      "type": "string",
+      "required": true,
+      "default": "5,200"
+    },
+    "thalassemiaWarriors": {
+      "type": "string",
+      "required": true,
+      "default": "120+"
+    }
+  }
+}
