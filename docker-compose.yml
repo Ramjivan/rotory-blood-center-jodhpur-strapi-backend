@@ -23,3 +23,9 @@ services:
       - DATABASE_CLIENT=sqlite
       - DATABASE_FILENAME=database/data.db
       - NODE_ENV=production
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
