@@ -25,6 +25,12 @@ services:
       - DATABASE_CLIENT=sqlite
       - DATABASE_FILENAME=database/data.db
       - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:1337/admin"]
+      start_period: 15s
+      interval: 30s
+      timeout: 10s
+      retries: 5
     networks:
       - dokploy-network
 
