@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   strapi:
     container_name: rbc_strapi
@@ -6,8 +8,8 @@ services:
       dockerfile: Dockerfile
     image: rbc-strapi:latest
     restart: unless-stopped
-    ports:
-      - '1337:1337'
+    expose:
+      - '1337'
     volumes:
       - ./database:/opt/app/database
       - ./public/uploads:/opt/app/public/uploads
