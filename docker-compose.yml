@@ -2,7 +2,6 @@ version: '3.8'
 
 services:
   strapi:
-    container_name: rbc_strapi
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,6 +9,8 @@ services:
     restart: unless-stopped
     expose:
       - '1337'
+    labels:
+      - "traefik.docker.network=dokploy-network"
     volumes:
       - ./database:/opt/app/database
       - ./public/uploads:/opt/app/public/uploads
