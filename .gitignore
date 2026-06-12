@@ -10,6 +10,10 @@ dist/
 
 # SQLite Database and tmp files
 .tmp/
+database/*.db
+database/*.db-journal
+database/*.db-shm
+database/*.db-wal
 
 # Media Uploads
 public/uploads/

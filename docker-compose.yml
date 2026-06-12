@@ -9,7 +9,7 @@ services:
     ports:
       - '1337:1337'
     volumes:
-      - ./.tmp:/opt/app/.tmp
+      - ./database:/opt/app/database
       - ./public/uploads:/opt/app/public/uploads
     environment:
       - HOST=0.0.0.0
