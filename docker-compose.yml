@@ -12,8 +12,8 @@ services:
     labels:
       - "traefik.docker.network=dokploy-network"
     volumes:
-      - ./database:/opt/app/database
-      - ./public/uploads:/opt/app/public/uploads
+      - strapi_db_volume:/opt/app/database
+      - strapi_uploads_volume:/opt/app/public/uploads
     environment:
       - HOST=0.0.0.0
       - PORT=3000
@@ -34,6 +34,10 @@ services:
       retries: 5
     networks:
       - dokploy-network
+
+volumes:
+  strapi_db_volume:
+  strapi_uploads_volume:
 
 networks:
   dokploy-network:
