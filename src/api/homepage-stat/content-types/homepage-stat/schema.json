@@ -25,6 +25,14 @@
       "type": "string",
       "required": true,
       "default": "120+"
+    },
+    "topAlertText": {
+      "type": "text",
+      "default": "🚨 URGENT REQUIREMENT: O-Negative (3 Units) at Main Hospital • A-Positive (2 Units) • Please donate today to save lives! 🚨"
+    },
+    "showTopAlert": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

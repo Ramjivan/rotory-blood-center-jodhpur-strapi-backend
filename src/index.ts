@@ -25,7 +25,9 @@ export default {
           data: {
             livesSaved: "15,000+",
             activeDonors: "5,200",
-            thalassemiaWarriors: "120+"
+            thalassemiaWarriors: "120+",
+            topAlertText: "🚨 URGENT REQUIREMENT: O-Negative (3 Units) at Main Hospital • A-Positive (2 Units) • Please donate today to save lives! 🚨",
+            showTopAlert: true
           }
         });
         console.log("✓ Seeded default homepage stats.");
