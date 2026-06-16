@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_mentions",
+  "info": {
+    "singularName": "media-mention",
+    "pluralName": "media-mentions",
+    "displayName": "Media Mention",
+    "description": "Newspaper clippings and digital mentions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "source": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

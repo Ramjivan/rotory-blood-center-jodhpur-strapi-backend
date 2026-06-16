@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "daily_biomedical_wastes",
+  "info": {
+    "singularName": "daily-biomedical-waste",
+    "pluralName": "daily-biomedical-wastes",
+    "displayName": "Daily Biomedical Waste",
+    "description": "Daily logs extracted from automated emails"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "redWeight": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "yellowWeight": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "blueWeight": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "whiteWeight": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    }
+  }
+}

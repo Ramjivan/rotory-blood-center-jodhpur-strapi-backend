@@ -25,3 +25,7 @@ public/uploads/
 # Logs
 logs
 *.log
+
+# Strapi internal build output
+.strapi/
+.strapi-updater.json

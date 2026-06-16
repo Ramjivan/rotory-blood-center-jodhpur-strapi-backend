@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "biomedical_wastes",
+  "info": {
+    "singularName": "biomedical-waste",
+    "pluralName": "biomedical-wastes",
+    "displayName": "Biomedical Waste",
+    "description": "Annual biomedical waste reports"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "uploadDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

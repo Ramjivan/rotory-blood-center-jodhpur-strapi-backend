@@ -36,6 +36,9 @@
     },
     "organizer": {
       "type": "string"
+    },
+    "mapsLink": {
+      "type": "string"
     }
   }
 }
