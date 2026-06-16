@@ -13,25 +13,30 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "The headline of the article or PR mention."
     },
     "source": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "Name of the publisher (e.g. Dainik Bhaskar, Times of India)."
     },
     "date": {
       "type": "date",
-      "required": true
+      "required": true,
+      "description": "The date the article was published."
     },
     "link": {
-      "type": "string"
+      "type": "string",
+      "description": "(Optional) The web link to the article. Leave blank for physical newspaper clippings."
     },
     "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "description": "(Optional) A scanned photo or image of the newspaper clipping."
     }
   }
 }

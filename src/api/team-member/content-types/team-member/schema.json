@@ -13,24 +13,29 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "Full name of the team member."
     },
     "role": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "Designation or title (e.g., 'President', 'Medical Officer')."
     },
     "bio": {
-      "type": "text"
+      "type": "text",
+      "description": "Short biography or description of their responsibilities."
     },
     "image": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["images"],
+      "description": "Profile picture of the team member."
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "description": "Controls display order on the website. Lower numbers (0, 1, 2) appear first."
     }
   }
 }

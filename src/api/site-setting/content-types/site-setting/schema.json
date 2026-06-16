@@ -14,67 +14,78 @@
     "phone": {
       "type": "string",
       "required": true,
-      "default": "+91 88247 89921"
+      "default": "+91 88247 89921",
+      "description": "The display phone number shown on the website (e.g., +91 88247 89921)."
     },
     "phoneRaw": {
       "type": "string",
       "required": true,
-      "default": "+918824789921"
+      "default": "+918824789921",
+      "description": "The raw phone number without spaces for clickable links (e.g., +918824789921)."
     },
     "whatsapp": {
       "type": "string",
       "required": true,
-      "default": "918824789921"
+      "default": "918824789921",
+      "description": "The WhatsApp number without spaces or the + sign (e.g., 918824789921)."
     },
     "email": {
       "type": "string",
       "required": true,
-      "default": "rotarybloodbankjodhpur@gmail.com"
+      "default": "rotarybloodbankjodhpur@gmail.com",
+      "description": "The primary contact email address."
     },
     "address": {
       "type": "string",
       "required": true,
-      "default": "K. N. Wanchoo Rotary Bhawan, Gaurav Path, Jodhpur - 342003 (Raj.)"
+      "default": "K. N. Wanchoo Rotary Bhawan, Gaurav Path, Jodhpur - 342003 (Raj.)",
+      "description": "The full physical address of the Blood Centre."
     },
     "addressLink": {
       "type": "string",
       "required": true,
-      "default": "https://share.google/jomDgSvkslzW9ytAx"
+      "default": "https://share.google/jomDgSvkslzW9ytAx",
+      "description": "The Google Maps share link for the address."
     },
     "bloodRequisitionForm": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "description": "PDF upload for the Blood Requisition Form."
     },
     "donorScreeningEnglish": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "description": "PDF upload for the Donor Screening Form (English)."
     },
     "donorScreeningHindi": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "description": "PDF upload for the Donor Screening Form (Hindi)."
     },
     "donationGuidelines": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "description": "PDF upload for the Donation Guidelines."
     },
     "postDonationHandbook": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "files"
-      ]
+      ],
+      "description": "PDF upload for the Post-Donation Handbook."
     }
   }
 }

@@ -13,32 +13,40 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "The name of the blood donation camp or drive."
     },
     "location": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "Physical location or venue where the camp is held."
     },
     "startDate": {
       "type": "date",
-      "required": true
+      "required": true,
+      "description": "Start date of the camp."
     },
     "endDate": {
       "type": "date",
-      "required": true
+      "required": true,
+      "description": "End date of the camp. (If it is a 1-day camp, make this the same as Start Date)."
     },
     "time": {
       "type": "string",
-      "required": true
+      "required": true,
+      "description": "Time window (e.g. '10:00 AM - 04:00 PM')."
     },
     "details": {
-      "type": "text"
+      "type": "text",
+      "description": "Any additional information or eligibility criteria for donors."
     },
     "organizer": {
-      "type": "string"
+      "type": "string",
+      "description": "Name of the organization, college, or community group hosting the drive."
     },
     "mapsLink": {
-      "type": "string"
+      "type": "string",
+      "description": "Google Maps URL for the venue."
     }
   }
 }
