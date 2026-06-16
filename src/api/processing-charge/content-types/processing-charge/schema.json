@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "processing_charges",
+  "info": {
+    "singularName": "processing-charge",
+    "pluralName": "processing-charges",
+    "displayName": "Processing Charge",
+    "description": "Blood processing charges and service fees"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "component": {
+      "type": "string",
+      "required": true,
+      "description": "Name of the blood component or service (e.g., PACKED RED BLOOD CELLS)."
+    },
+    "price": {
+      "type": "integer",
+      "required": true,
+      "description": "Processing fee in rupees."
+    },
+    "details": {
+      "type": "text",
+      "description": "Additional information about the component or service."
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "description": "Order of appearance on the website. Lower numbers appear first."
+    }
+  }
+}
