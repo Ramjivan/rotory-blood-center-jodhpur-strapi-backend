@@ -4,7 +4,7 @@
   "info": {
     "singularName": "biomedical-waste",
     "pluralName": "biomedical-wastes",
-    "displayName": "Biomedical Waste",
+    "displayName": "Annual Biomedical Waste",
     "description": "Annual biomedical waste reports"
   },
   "options": {
