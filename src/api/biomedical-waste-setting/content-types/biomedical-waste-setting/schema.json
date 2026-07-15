@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "biomedical_waste_settings",
+  "info": {
+    "singularName": "biomedical-waste-setting",
+    "pluralName": "biomedical-waste-settings",
+    "displayName": "Biomedical Waste Setting",
+    "description": "Configuration and external links for Daily Biomedical Waste portal"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "dailyReportUrl": {
+      "type": "string",
+      "required": false,
+      "default": "https://ebloodbanking.com/html-bmw-status/rotary-jodhpur"
+    }
+  }
+}
